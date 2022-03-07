@@ -111,7 +111,7 @@ nav .profile-link a {
     height: 500px;
     text-align: center;
     align-items: center;
-    background-image: url("../iconos/fondo.jpg");
+    background-image: url("iconos/fondo.jpg");
     background-repeat: no-repeat;/*permite no repetir la imagen cuando es pequeña*/
     background-size: 100%;/*en este caso hace que la imagen se estire al tamaño de la pantalla*/
     background-position: center;
