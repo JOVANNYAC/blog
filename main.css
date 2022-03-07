@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Slab:wght@100&display=swap');
+
+body{
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+p {
+    text-align: justify;
+}
+
+.home-body {
+    position: fixed; /* toda esta configuracion es */
+    top: 0;          /*para que la pagina qued sin*/
+    bottom: 0;       /*sin scroll*/
+    left: 0;          /**/
+    right: 0;         /**/
+    
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+   /* display: grid;*/
+    grid-template-rows: 1fr 1fr;
+
+}
+
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    /*justify-items:flex-end ;  ¿entonces esta es una propiedad de css grid que no deberia ir aca por que estamos usando flexbox? */
+    align-items: center;   /*centra los items en el espacio de arriba y abajo*/
+    justify-content: space-between;/*reparte el espacio entre los elementos*/
+    justify-self: end; /*para que los elementos se vayan al final*/
+    margin-right: 50px;
+
+}
+
+.grid-container {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .header-icons-container .icons img {
+width: 40px;    
+height: auto;
+fill: currentColor;
+}
+
+
+header .header-icons-container .icons {  /* propiedad filter cambia el color a los iconos*/
+    filter: invert(100%); 
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+nav .nav-logo-container {
+    margin-left: 50px;
+
+}
+
+nav .nav-logo-container img {
+    width: 125px;
+    margin-top: 10px;
+}
+
+nav .profile-link {
+    display: flex;
+    align-items: center; /* centra verticalmente*/
+    justify-content: flex-end; /*manda todo al final en este caso jjstifica al lado derecho*/
+    margin-right: 50px;
+}
+
+nav .profile-link a {
+    color: black;
+    border-style: solid;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+
+     
+                         /*coloca la linea bajo el link*/
+}
+
+.home-main {
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    background-image: url("../iconos/fondo.jpg");
+    background-repeat: no-repeat;/*permite no repetir la imagen cuando es pequeña*/
+    background-size: 100%;/*en este caso hace que la imagen se estire al tamaño de la pantalla*/
+    background-position: center;
+    background-size: cover;
+}
+
+.home-main-button {
+    border-style: none;
+    width: 100px;
+    height: 50px;
+    justify-self: center;
+    display: grid;
+    align-items: center;
+    background-color: yellow;
+    
+}
+
+.home-main-button a {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.home-main-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: 700px;
+    letter-spacing: 10px;
+    color: white;
+    text-align: center;
+
+}
+
+.main-blog {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(230, 225, 225);
+}
+
+.main-blog div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-right: 80px;
+    
+}
+
+.main-blog button {
+    width: 100px;
+    padding: 8px;
+    border-color: #47cfac;
+    border-width: 2px;
+}
+
+.img-blog {
+    width: 350px;
+}
+
+.demas-blogpost img {
+    width: 300px;
+}
+
+
+/*estilos blogs.html*/
+
+.blogs-main {
+    display: grid;
+}
+
+.blogs-news-container {
+    
+    padding: 0 50px 10px;
+    background-color: #47cfac;
+}
+
+.blogs-main-news {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.blogs-news-img-container {
+    grid-column: 1;
+}
+
+.blogs-news-img-container img{
+    width: 85%;
+}
+
+.blogs-info-news{
+    grid-column: 2;
+}
+.blogs-info-news p {
+    padding-bottom: 35px;
+}
+
+.blogs-posts-container{
+    padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3{
+    border-bottom: 1px solid cornflowerblue;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.blogs-button {
+    border: 1px solid cyan;
+    padding: 10px 15px;   
+}
+.blogs-posts-container .posts-container{
+    display: inline-block;
+    max-width: 30%;
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+
+.blogs-posts-container .posts-container img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: 35px solid cyan;
+    text-align: center;
+    
+}
+
+footer p {
+    color: white;   
+    margin-top: 30px;
+    text-align: center;
+}
+
+.blogpost-main-container h3 {
+    border-bottom: 3px solid cyan;
+    padding-bottom: 15px;
+}
+.blogpost-img-container img {
+    width: 100%;
+}
+
+.blogpost-main-container h1 {
+    font-size: 40px;
+}
+
+.contac-main-container img {
+   width: 100px;
+   height: auto;
+   border: solid 2px cyan;
+   margin-right: 20px;
+   margin-left: 20px;
+   
+   
+}
+
+
+.contac-main-container .contac-rigth,.contac-left {
+    text-align: initial;
+    margin-top: 100px;
+    display: inline-block;
+    width: 49.5%;
+    height: 100%;
+    margin-bottom: 100px;
+    
+
+}
+
+.contac-main-container a {
+  border-bottom: 2px solid cyan;
+}
+
+
+/*perfil estilos del perfil*/
+.perfil-sobre-mi {
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     background-color: #47cfac;
+     padding: 30px 50px;
+}
+
+.perfil-sobre-mi img {
+   max-width: 90%;
+    height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.perfil-sobre-mi-descripcion {
+    padding-left: 80px;
+}
+.perfil-mis-proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.perfil-mis-proyectos h1 {
+         grid-column: 1/4;
+         text-align: center;
+         border-bottom: solid 2px cyan;
+         padding: 30px 0;
+}
+
+.perfil-mis-proyectos article {
+    padding: 20px;
+}

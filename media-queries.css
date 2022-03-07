@@ -1,0 +1,68 @@
+@media (max-width: 900px) {
+    .perfil-sobre-mi {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .perfil-mis-proyectos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .perfil-mis-proyectos h1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+    }
+
+    .contac-main-container .contac-left,.contac-rigth {
+        width: 90%;
+        margin-left: 30px;
+        margin-top: 60px;
+        display: inline-block;
+        width: 49%;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+
+    .blogs-main-news {
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    }
+
+    .blogs-news-img-container {
+        grid-row: 2;
+    }
+
+    .blogs-info-news{
+        grid-column: 1;
+        grid-row: 3;
+        padding-bottom: 30px;
+    }
+
+    .blogs-posts-container .posts-container{
+        display: inline-block;
+        max-width: 47%;
+        padding-left: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (max-width : 500px) {
+    .blogs-posts-container .posts-container{
+        display: inline-block;
+        max-width: 97%;
+        padding-left: 10px;
+        margin-bottom: 50px;
+    }
+    
+    .perfil-sobre-mi img{
+        padding: 0;
+    }
+
+    .perfil-sobre-mi-descripcion {
+        padding: 0;
+    }
+}
